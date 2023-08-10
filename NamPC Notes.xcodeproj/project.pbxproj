@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C927D2DF2A827E2300A373FF /* NamPC_NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C927D2DE2A827E2300A373FF /* NamPC_NotesApp.swift */; };
+		C927D2E12A827E2300A373FF /* NoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C927D2E02A827E2300A373FF /* NoteListView.swift */; };
+		C927D2E32A827E2500A373FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C927D2E22A827E2500A373FF /* Assets.xcassets */; };
+		C927D2E72A827E2500A373FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C927D2E62A827E2500A373FF /* Preview Assets.xcassets */; };
+		C927D2EF2A827E7000A373FF /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C927D2EE2A827E7000A373FF /* Note.swift */; };
+		C927D2F32A8332E700A373FF /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C927D2F22A8332E700A373FF /* NoteListViewModel.swift */; };
+		C927D2F52A8332F300A373FF /* NoteCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C927D2F42A8332F300A373FF /* NoteCellViewModel.swift */; };
+		C927D2FB2A83696E00A373FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C927D2FA2A83696E00A373FF /* GoogleService-Info.plist */; };
+		C927D3002A83729600A373FF /* NoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C927D2FF2A83729600A373FF /* NoteRepository.swift */; };
+		C9403C9D2A83CAE0002F6669 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9403C9C2A83CAE0002F6669 /* ProfileView.swift */; };
+		C9403C9F2A83CBA0002F6669 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9403C9E2A83CBA0002F6669 /* UserRepository.swift */; };
+		C9403CA42A847EF9002F6669 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9403CA32A847EF9002F6669 /* UserViewModel.swift */; };
+		C9403CA62A848301002F6669 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9403CA52A848301002F6669 /* NoteDetailView.swift */; };
+		C960CC172A837AE700E19ECE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960CC162A837AE700E19ECE /* User.swift */; };
+		FEF6AA4E8F57554263F3ACFC /* Pods_NamPC_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA0F0D2C3DD08F10829B7DF /* Pods_NamPC_Notes.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D6A4C8D2EA6C3FE4E049F8B /* Pods-NamPC Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamPC Notes.debug.xcconfig"; path = "Target Support Files/Pods-NamPC Notes/Pods-NamPC Notes.debug.xcconfig"; sourceTree = "<group>"; };
+		3E2E09381111216285120E92 /* Pods-NamPC Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamPC Notes.release.xcconfig"; path = "Target Support Files/Pods-NamPC Notes/Pods-NamPC Notes.release.xcconfig"; sourceTree = "<group>"; };
+		C927D2DB2A827E2300A373FF /* NamPC Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NamPC Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C927D2DE2A827E2300A373FF /* NamPC_NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamPC_NotesApp.swift; sourceTree = "<group>"; };
+		C927D2E02A827E2300A373FF /* NoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListView.swift; sourceTree = "<group>"; };
+		C927D2E22A827E2500A373FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C927D2E42A827E2500A373FF /* NamPC_Notes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NamPC_Notes.entitlements; sourceTree = "<group>"; };
+		C927D2E62A827E2500A373FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C927D2EE2A827E7000A373FF /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		C927D2F22A8332E700A373FF /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
+		C927D2F42A8332F300A373FF /* NoteCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCellViewModel.swift; sourceTree = "<group>"; };
+		C927D2FA2A83696E00A373FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C927D2FF2A83729600A373FF /* NoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRepository.swift; sourceTree = "<group>"; };
+		C9403C9C2A83CAE0002F6669 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C9403C9E2A83CBA0002F6669 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		C9403CA32A847EF9002F6669 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		C9403CA52A848301002F6669 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		C960CC162A837AE700E19ECE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CBA0F0D2C3DD08F10829B7DF /* Pods_NamPC_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NamPC_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C927D2D82A827E2300A373FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF6AA4E8F57554263F3ACFC /* Pods_NamPC_Notes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D7F0C8B7229FD322A3D929D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBA0F0D2C3DD08F10829B7DF /* Pods_NamPC_Notes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4901193090B5EDD9C7E7CFC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D6A4C8D2EA6C3FE4E049F8B /* Pods-NamPC Notes.debug.xcconfig */,
+				3E2E09381111216285120E92 /* Pods-NamPC Notes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C927D2D22A827E2300A373FF = {
+			isa = PBXGroup;
+			children = (
+				C927D2DD2A827E2300A373FF /* NamPC Notes */,
+				C927D2DC2A827E2300A373FF /* Products */,
+				4901193090B5EDD9C7E7CFC1 /* Pods */,
+				1D7F0C8B7229FD322A3D929D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C927D2DC2A827E2300A373FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C927D2DB2A827E2300A373FF /* NamPC Notes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C927D2DD2A827E2300A373FF /* NamPC Notes */ = {
+			isa = PBXGroup;
+			children = (
+				C9403CA02A847BA1002F6669 /* Helpers */,
+				C927D2FE2A83727100A373FF /* Repositories */,
+				C927D2FA2A83696E00A373FF /* GoogleService-Info.plist */,
+				C927D2ED2A827E6500A373FF /* Model */,
+				C927D2F12A8332C500A373FF /* ViewModels */,
+				C927D2F02A827F3400A373FF /* Views */,
+				C927D2E22A827E2500A373FF /* Assets.xcassets */,
+				C927D2E42A827E2500A373FF /* NamPC_Notes.entitlements */,
+				C927D2E52A827E2500A373FF /* Preview Content */,
+			);
+			path = "NamPC Notes";
+			sourceTree = "<group>";
+		};
+		C927D2E52A827E2500A373FF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C927D2E62A827E2500A373FF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C927D2ED2A827E6500A373FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C927D2EE2A827E7000A373FF /* Note.swift */,
+				C960CC162A837AE700E19ECE /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C927D2F02A827F3400A373FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C927D2DE2A827E2300A373FF /* NamPC_NotesApp.swift */,
+				C927D2E02A827E2300A373FF /* NoteListView.swift */,
+				C9403C9C2A83CAE0002F6669 /* ProfileView.swift */,
+				C9403CA52A848301002F6669 /* NoteDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C927D2F12A8332C500A373FF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C927D2F22A8332E700A373FF /* NoteListViewModel.swift */,
+				C927D2F42A8332F300A373FF /* NoteCellViewModel.swift */,
+				C9403CA32A847EF9002F6669 /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C927D2FE2A83727100A373FF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C927D2FF2A83729600A373FF /* NoteRepository.swift */,
+				C9403C9E2A83CBA0002F6669 /* UserRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C9403CA02A847BA1002F6669 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C927D2DA2A827E2300A373FF /* NamPC Notes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C927D2EA2A827E2500A373FF /* Build configuration list for PBXNativeTarget "NamPC Notes" */;
+			buildPhases = (
+				59EC201CDA8926E087A6B14F /* [CP] Check Pods Manifest.lock */,
+				C927D2D72A827E2300A373FF /* Sources */,
+				C927D2D82A827E2300A373FF /* Frameworks */,
+				C927D2D92A827E2300A373FF /* Resources */,
+				B38E254654C91F91FDFB65BD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NamPC Notes";
+			productName = "NamPC Notes";
+			productReference = C927D2DB2A827E2300A373FF /* NamPC Notes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C927D2D32A827E2300A373FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C927D2DA2A827E2300A373FF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C927D2D62A827E2300A373FF /* Build configuration list for PBXProject "NamPC Notes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C927D2D22A827E2300A373FF;
+			productRefGroup = C927D2DC2A827E2300A373FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C927D2DA2A827E2300A373FF /* NamPC Notes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C927D2D92A827E2300A373FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C927D2E72A827E2500A373FF /* Preview Assets.xcassets in Resources */,
+				C927D2FB2A83696E00A373FF /* GoogleService-Info.plist in Resources */,
+				C927D2E32A827E2500A373FF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59EC201CDA8926E087A6B14F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NamPC Notes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B38E254654C91F91FDFB65BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NamPC Notes/Pods-NamPC Notes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NamPC Notes/Pods-NamPC Notes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NamPC Notes/Pods-NamPC Notes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C927D2D72A827E2300A373FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9403C9F2A83CBA0002F6669 /* UserRepository.swift in Sources */,
+				C9403CA42A847EF9002F6669 /* UserViewModel.swift in Sources */,
+				C927D2E12A827E2300A373FF /* NoteListView.swift in Sources */,
+				C927D2F32A8332E700A373FF /* NoteListViewModel.swift in Sources */,
+				C9403C9D2A83CAE0002F6669 /* ProfileView.swift in Sources */,
+				C927D2EF2A827E7000A373FF /* Note.swift in Sources */,
+				C960CC172A837AE700E19ECE /* User.swift in Sources */,
+				C927D3002A83729600A373FF /* NoteRepository.swift in Sources */,
+				C9403CA62A848301002F6669 /* NoteDetailView.swift in Sources */,
+				C927D2DF2A827E2300A373FF /* NamPC_NotesApp.swift in Sources */,
+				C927D2F52A8332F300A373FF /* NoteCellViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C927D2E82A827E2500A373FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C927D2E92A827E2500A373FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C927D2EB2A827E2500A373FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6A4C8D2EA6C3FE4E049F8B /* Pods-NamPC Notes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "NamPC Notes/NamPC_Notes.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NamPC Notes/Preview Content\"";
+				DEVELOPMENT_TEAM = 5S5AS6QJHJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nampham.NamPC-Notes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C927D2EC2A827E2500A373FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E2E09381111216285120E92 /* Pods-NamPC Notes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "NamPC Notes/NamPC_Notes.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NamPC Notes/Preview Content\"";
+				DEVELOPMENT_TEAM = 5S5AS6QJHJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nampham.NamPC-Notes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C927D2D62A827E2300A373FF /* Build configuration list for PBXProject "NamPC Notes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C927D2E82A827E2500A373FF /* Debug */,
+				C927D2E92A827E2500A373FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C927D2EA2A827E2500A373FF /* Build configuration list for PBXNativeTarget "NamPC Notes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C927D2EB2A827E2500A373FF /* Debug */,
+				C927D2EC2A827E2500A373FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C927D2D32A827E2300A373FF /* Project object */;
+}
