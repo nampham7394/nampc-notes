@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct NoteDetailView: View {
-    @EnvironmentObject var settings: AddNewSettings
     @Environment(\.dismiss) var dismiss
     @ObservedObject var noteDetailViewModel: NoteCellViewModel
     var onCommit: (Note) -> Void = { _ in }
+    @Binding var isAddNew: Bool
     
     var body: some View {
         GeometryReader { geo in
@@ -23,7 +23,7 @@ struct NoteDetailView: View {
             }
             .padding()
             .toolbar {
-                settings.addNew
+                isAddNew
                 ? ToolbarItem(placement: .navigationBarTrailing) {
                     Text("Save").foregroundColor(.primary)
                         .onTapGesture {
@@ -48,6 +48,6 @@ struct NoteDetailView: View {
 
 struct NoteDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        NoteDetailView(noteDetailViewModel: NoteCellViewModel(note: Note(content: "Content", userID: "0001")))
+        NoteDetailView(noteDetailViewModel: NoteCellViewModel(note: Note(content: "Content", userID: "0001")), isAddNew: .constant(false))
     }
 }
