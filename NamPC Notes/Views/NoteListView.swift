@@ -10,53 +10,18 @@ import SwiftUI
 struct NoteListView: View {
     
     @ObservedObject var noteListViewModel = NoteListViewModel()
-    @StateObject var settings = AddNewSettings()
-
-    @ViewBuilder var currentUserSection: some View {
-        if noteListViewModel.noteCellViewModels.count > 0 {
-            Section("Current User") {
-                ForEach(noteListViewModel.noteCellViewModels) { noteCellVM in
-                    NavigationLink {
-                        NoteDetailView(noteDetailViewModel: noteCellVM) { note in
-                            self.noteListViewModel.addNote(note: note)
-                        }
-                        .onAppear {
-                            settings.addNew = false
-                        }
-                    } label: {
-                        NoteCell(noteCellVM: noteCellVM)
-                    }
-                }
-                
-            }
-        }
-    }
+    @State var isAddNew = false
     
-    @ViewBuilder var otherUsersSection: some View {
-        if noteListViewModel.otherNoteCellViewModels.count > 0 {
-            Section("Other Users") {
-                ForEach(noteListViewModel.otherNoteCellViewModels) { noteCellVM in
-                    NavigationLink {
-                        NoteDetailView(noteDetailViewModel: noteCellVM) { note in
-                            self.noteListViewModel.addNote(note: note)
-                        }
-                        .onAppear {
-                            settings.addNew = false
-                        }
-                    } label: {
-                        NoteCell(noteCellVM: noteCellVM)
-                    }
-                }
-            }
-        }
+    func onCommit(note: Note) {
+        self.noteListViewModel.addNote(note: note)
     }
     
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
                 List {
-                    currentUserSection
-                    otherUsersSection
+                    CurrentUserSection(noteListViewModel: noteListViewModel, isAddNew: $isAddNew)
+                    OtherUsersSection(noteListViewModel: noteListViewModel, isAddNew: $isAddNew)
                 }
                 .listStyle(.grouped)
             }
@@ -65,12 +30,11 @@ struct NoteListView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink {
-                        NoteDetailView(noteDetailViewModel: NoteCellViewModel(note: Note(content: ""))) { note in
-                            self.noteListViewModel.addNote(note: note)
-                        }
-                        .onAppear {
-                            settings.addNew = true
-                        }
+                        NoteDetailView(noteDetailViewModel:
+                                        NoteCellViewModel(note: Note(content: "")),
+                                       onCommit: self.onCommit,
+                                       isAddNew: .constant(true)
+                        )
                     } label: {
                         HStack {
                             Image(systemName: "plus.circle.fill")
@@ -78,12 +42,63 @@ struct NoteListView: View {
                                 .frame(width: 20, height: 20)
                             Text("Add New Task")
                         }
-                        .padding()
+                        .padding(.all, 8)
+                        .padding(.trailing, 0)
                     }
                 }
             }
         }
-        .environmentObject(settings)
+    }
+}
+
+struct CurrentUserSection: View {
+    @ObservedObject var noteListViewModel: NoteListViewModel
+    @State var isAddNew: Binding<Bool>
+    
+    func onCommit(note: Note) {
+        self.noteListViewModel.addNote(note: note)
+    }
+
+    var body: some View {
+        if noteListViewModel.noteCellViewModels.count > 0 {
+            Section("Current User") {
+                ForEach(noteListViewModel.noteCellViewModels) { noteCellVM in
+                    NavigationLink {
+                        NoteDetailView(noteDetailViewModel: noteCellVM,
+                                       onCommit: self.onCommit,
+                                       isAddNew: .constant(false))
+                    } label: {
+                        NoteCell(noteCellVM: noteCellVM)
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+struct OtherUsersSection: View {
+    @ObservedObject var noteListViewModel: NoteListViewModel
+    @State var isAddNew: Binding<Bool>
+    
+    func onCommit(note: Note) {
+        self.noteListViewModel.addNote(note: note)
+    }
+
+    var body: some View {
+        if noteListViewModel.otherNoteCellViewModels.count > 0 {
+            Section("Other Users") {
+                ForEach(noteListViewModel.otherNoteCellViewModels) { noteCellVM in
+                    NavigationLink {
+                        NoteDetailView(noteDetailViewModel: noteCellVM,
+                                       onCommit: self.onCommit,
+                                       isAddNew: .constant(false))
+                    } label: {
+                        NoteCell(noteCellVM: noteCellVM)
+                    }
+                }
+            }
+        }
     }
 }
 

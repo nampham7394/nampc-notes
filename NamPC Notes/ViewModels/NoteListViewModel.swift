@@ -8,11 +8,6 @@
 import Foundation
 import Combine
 
-// Our observable object class
-class AddNewSettings: ObservableObject {
-    @Published var addNew = false
-}
-
 class NoteListViewModel: ObservableObject, Identifiable {
     @Published var noteRepository = NoteRepository()
     @Published var noteCellViewModels = [NoteCellViewModel]()
