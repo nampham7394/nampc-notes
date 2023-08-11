@@ -20,6 +20,7 @@
 		C9403C9F2A83CBA0002F6669 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9403C9E2A83CBA0002F6669 /* UserRepository.swift */; };
 		C9403CA42A847EF9002F6669 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9403CA32A847EF9002F6669 /* UserViewModel.swift */; };
 		C9403CA62A848301002F6669 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9403CA52A848301002F6669 /* NoteDetailView.swift */; };
+		C95C5E4E2A85CC4200500B27 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C5E4D2A85CC4200500B27 /* Images.swift */; };
 		C960CC172A837AE700E19ECE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960CC162A837AE700E19ECE /* User.swift */; };
 		FEF6AA4E8F57554263F3ACFC /* Pods_NamPC_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA0F0D2C3DD08F10829B7DF /* Pods_NamPC_Notes.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		C9403C9E2A83CBA0002F6669 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		C9403CA32A847EF9002F6669 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		C9403CA52A848301002F6669 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		C95C5E4D2A85CC4200500B27 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		C960CC162A837AE700E19ECE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CBA0F0D2C3DD08F10829B7DF /* Pods_NamPC_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NamPC_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 		C927D2DD2A827E2300A373FF /* NamPC Notes */ = {
 			isa = PBXGroup;
 			children = (
+				C95C5E4C2A85CC3800500B27 /* Constants */,
 				C9403CA02A847BA1002F6669 /* Helpers */,
 				C927D2FE2A83727100A373FF /* Repositories */,
 				C927D2FA2A83696E00A373FF /* GoogleService-Info.plist */,
@@ -161,6 +164,14 @@
 			children = (
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C95C5E4C2A85CC3800500B27 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C95C5E4D2A85CC4200500B27 /* Images.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9403C9F2A83CBA0002F6669 /* UserRepository.swift in Sources */,
+				C95C5E4E2A85CC4200500B27 /* Images.swift in Sources */,
 				C9403CA42A847EF9002F6669 /* UserViewModel.swift in Sources */,
 				C927D2E12A827E2300A373FF /* NoteListView.swift in Sources */,
 				C927D2F32A8332E700A373FF /* NoteListViewModel.swift in Sources */,
