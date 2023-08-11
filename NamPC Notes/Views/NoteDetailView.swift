@@ -32,11 +32,13 @@ struct NoteDetailView: View {
                         }
                 } : nil
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Text("Back").foregroundColor(.primary)
+                    Image(Images.grayBack)
+                        .resizable()
+                        .frame(width: 20, height: 16)
                         .onTapGesture {
                             dismiss()
                         }
-                    }
+                }
             }
             .navigationTitle("Note Detail")
             .navigationBarBackButtonHidden(true)

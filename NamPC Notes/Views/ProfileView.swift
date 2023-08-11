@@ -31,11 +31,13 @@ struct ProfileView: View {
                         }
                     }
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Text("Back").foregroundColor(.primary)
+                    Image(Images.grayBack)
+                        .resizable()
+                        .frame(width: 20, height: 16)
                         .onTapGesture {
                             dismiss()
                         }
-                    }
+                }
             }
             .navigationBarBackButtonHidden(true)
         }
